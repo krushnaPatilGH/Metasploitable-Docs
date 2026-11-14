@@ -87,7 +87,7 @@ handle_login(struct vsf_session* p_sess, struct mystr* p_user_str,
 // However to reach the backdoor we need the first character of username to be alpha numeric eg could be "a:)", "aa:)", "z:)op", etc
 ```
 ### Exploit 
-![vsFTPd 2.3.4](Res/vsFTPd%202.3.4.png)
+![vsFTPd 2.3.4](vsFTPd%202.3.4.png)
 - FTP takes `USER` and `PASS` before checking them.
 - We use `USER a:)` that opens the backdoor, password can be anything.
 - On the server, the backdoor opens on port 6200/tcp.
